@@ -54,11 +54,15 @@ body{
         border: none;
         background-color: $Green;
         cursor: pointer;
-        transition: box-shadow 0.5s ease-in-out;
 
-        &:hover{
-            box-shadow: 0 0 1rem $Green;
+        @media (hover:hover){
+            transition: box-shadow 0.5s ease-in-out;
+
+            &:hover{
+                box-shadow: 0 0 1rem $Green;
+            }
         }
+
 
         img{
             width: 1.2rem;

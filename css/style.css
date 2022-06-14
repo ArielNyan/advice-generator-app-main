@@ -71,15 +71,19 @@ body {
   border: none;
   background-color: #52ffa8;
   cursor: pointer;
-  -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
-  transition: -webkit-box-shadow 0.5s ease-in-out;
-  transition: box-shadow 0.5s ease-in-out;
-  transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
 }
 
-.card_btn:hover {
-  -webkit-box-shadow: 0 0 1rem #52ffa8;
-          box-shadow: 0 0 1rem #52ffa8;
+@media (hover: hover) {
+  .card_btn {
+    -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
+    transition: -webkit-box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  }
+  .card_btn:hover {
+    -webkit-box-shadow: 0 0 1rem #52ffa8;
+            box-shadow: 0 0 1rem #52ffa8;
+  }
 }
 
 .card_btn img {
